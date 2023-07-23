@@ -116,9 +116,12 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background-color: blue;
     color: aqua;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 #next-btn{
     background-color: darkblue;
